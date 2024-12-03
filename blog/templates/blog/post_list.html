@@ -19,6 +19,9 @@
     <div class="row">
         <div class="col">
 
+            {% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in posts %}
                 <article class="post">
                     <time class="date">
                         {{ post.published_date }}
@@ -33,6 +36,8 @@ Reading is easier, too, in the new Reading view. You can collapse parts of the d
 
 </p>
                 </article>
+             {% endfor %}
+{% endblock %}
 
         </div>
     </div>
