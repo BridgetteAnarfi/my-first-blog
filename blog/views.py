@@ -31,4 +31,3 @@ def post_new(request):
 
 
 
-
